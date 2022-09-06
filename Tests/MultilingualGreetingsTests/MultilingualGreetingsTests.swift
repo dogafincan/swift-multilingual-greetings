@@ -1,11 +1,10 @@
+import Gen
 import XCTest
 @testable import MultilingualGreetings
 
 final class MultilingualGreetingsTests: XCTestCase {
-    func testExample() throws {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct
-        // results.
-        XCTAssertEqual(MultilingualGreetings().text, "Hello, World!")
+    func testrandomMultilingualGreeting() throws {
+        xoshiro = Xoshiro(seed: 0)
+        XCTAssertEqual(randomMultilingualGreeting(), "안녕하세요")
     }
 }
